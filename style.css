@@ -35,7 +35,6 @@ p {
     width: 130px;
     height: 40px;
     color: #000;
-    border-radius: 5px;
     padding: 10px 25px;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
@@ -43,12 +42,56 @@ p {
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
-    display: block;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     margin: 0 auto 20px; /* Center and add margin to stack vertically */
-    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    /* box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
         7px 7px 20px 0px rgba(0, 0, 0, .1),
-        4px 4px 5px 0px rgba(0, 0, 0, .1);
+        4px 4px 5px 0px rgba(0, 0, 0, .1); */
     outline: none;
 }
 
 /* Add your custom styles for btn-1, btn-2, and btn-3 */
+.btn-1 {
+    background: rgb(255,255,255);
+    border: 2px solid black;
+}
+
+.btn-1:hover {
+    background: rgb(0, 4, 43);
+    /* border: 0px solid whitesmoke; */
+    color: #eeefed;
+}
+
+.btn-2 {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgb(141, 140, 140) 0%, rgb(54, 54, 54) 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-2:hover {
+    color: white;
+    background: transparent;
+    box-shadow: none;
+    background: linear-gradient(0deg, rgb(54, 54, 54) 0%, rgb(172, 172, 172) 100%);
+}
+
+.btn-3 {
+    background: rgb(2, 2, 2);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(109, 109, 109) 100%);
+  border: none;
+  color: white;
+}
+
+.btn-3:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+    inset -3px -3px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(253, 253, 253, 0.4);
+}
